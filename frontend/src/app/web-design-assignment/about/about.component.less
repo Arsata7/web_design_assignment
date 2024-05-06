@@ -1,0 +1,110 @@
+.main {
+  background-color: #20202c;
+}
+
+.container {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #20202c;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.header p {
+  margin-top: 30px;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 50px;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  width: 40%;
+}
+
+.vertical-line {
+  border-left: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+.mdc-data-table__table {
+  min-width: 50%;
+}
+
+.table {
+  margin-top: 30px;
+  width: 60%;
+}
+
+.table_header {
+  color: white;
+  font-weight: bold;
+}
+
+.table_cell {
+  color: #727692;
+}
+
+.modal-open {
+  animation: modalAnimation 2s ease-in-out;
+}
+
+@keyframes modalAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.price {
+  justify-content: flex-end;
+  width: 100px;
+}
+
+.header_border {
+border-bottom: 2px solid;
+color: rgb(49, 49, 126);
+}
+
+.row_border {
+  border-bottom: 1px solid;
+  color: rgb(126, 126, 138);
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 75%;
+  }
+  .wrapper {
+   width: 100%;
+  }
+  .table {
+    width: 75%;
+  }
+}

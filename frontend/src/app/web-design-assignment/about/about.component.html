@@ -1,0 +1,37 @@
+<div class="main">
+  <div class="container">
+    <div class="header">
+        <h1>About</h1>
+        <p>Welcome to our store! At Mobile Store, we're dedicated to providing top-quality mobile phones that cater to your needs and preferences. Whether you're looking for the latest flagship devices with cutting-edge features or reliable budget-friendly options, we've got you covered.</p>
+    </div>
+    <div class="wrapper">
+      <div class="info">
+        <div class="vertical-line"></div> 
+        <div class="about-section">
+          <h2><span style="color: #6971fa;">About</span> Our Products</h2>
+          <p style="color: #898c9b;">At Mobile Store, we offer a diverse range of mobile phones to suit every lifestyle and budget. For more specifications and images, visit <a href="http://www.gsmarena.com" style="text-decoration: underline; color: white;">www.gsmarena.com</a>.</p>
+        </div>
+      </div>
+      <app-button (click)="openModal()" label="Open Modal"></app-button>
+    </div>
+    <mat-table class="table" [dataSource]="products">
+      <ng-container matColumnDef="item">
+        <mat-header-cell class="table_header" *matHeaderCellDef> Item </mat-header-cell>
+        <mat-cell class="table_cell" *matCellDef="let product"> {{ product.item }} </mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="description">
+        <mat-header-cell class="table_header" *matHeaderCellDef> Description </mat-header-cell>
+        <mat-cell class="table_cell" *matCellDef="let product"> {{ product.description }} </mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="price">
+        <mat-header-cell class="table_header price" *matHeaderCellDef> Price </mat-header-cell>
+        <mat-cell class="table_cell price" *matCellDef="let product"> {{ product.price | currency:'USD':'symbol':'1.2-2' }} </mat-cell>
+      </ng-container>
+    
+      <mat-header-row class="header_border" *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row class="row_border" *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+</div>

@@ -1,0 +1,145 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background-color: #2c2c3a;
+  padding-top: 100px;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.left-side, .right-side {
+  width: 100%;
+}
+
+.right-side {
+  padding-left: 100px;
+  font-size: 18px;
+  color: #747485;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  margin-bottom: 170px;
+  position: relative;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.inputColor {
+  background-color: #20202c;
+  color: white;
+  border: 0;
+  padding: 8px;
+  outline: none; 
+}
+
+.inputColor:focus {
+  border: 1px solid #6971fa;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.inputColor:not(:placeholder-shown) {
+  background-color: #20202c;
+  border: 1px solid #6971fa;
+}
+
+.inputColor:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.labelColor {
+  color: #727692;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.infoMail {
+  color: #6971fa;
+}
+
+.infoPhone {
+  font-size: 24px;
+  color: #6971fa;
+}
+
+.btnSend {
+  padding-top: 10px;
+}
+
+.notification {
+  position: absolute;
+  left: 50%;
+  bottom: 17.7%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #20202c;
+  color: #727692;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+ .wrapper {
+  width: 85%;
+ }
+ .right-side {
+  padding-left: 30px;
+ }
+}
+@media screen and (max-width: 700px) {
+ .wrapper {
+  flex-direction: column;
+  width: 70%;
+ }
+ .btnSend {
+  padding-bottom: 20px;
+ }
+ .right-side {
+  padding-left: 20px;
+ }
+}

@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <mat-toolbar color="primary" class="toolbar">
+    <span class="spacer"></span>
+    <button mat-button (click)="scrollTo('home')" [class.active]="selectedButton === 'home'">Home</button>
+    <button mat-button (click)="scrollTo('grid')" [class.active]="selectedButton === 'grid'">Store</button>
+    <button mat-button (click)="scrollTo('about')" [class.active]="selectedButton === 'about'">About</button>
+    <button mat-button (click)="scrollTo('contact')" [class.active]="selectedButton === 'contact'">Contact</button>
+  </mat-toolbar>
+  <div class="content-container">
+    <app-carousel id="home-component"></app-carousel>
+    <app-grid id="grid-component"></app-grid>
+    <app-about id="about-component"></app-about>
+    <app-contact id="contact-component"></app-contact>
+  </div>
+</div>

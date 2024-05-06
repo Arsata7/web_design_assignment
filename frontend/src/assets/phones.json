@@ -1,0 +1,26 @@
+[
+  {
+    "title": "iPhone 13 Pro",
+    "description": "Super Retina XDR display, A-series chip, advanced camera.",
+    "price": 899,
+    "image": "assets/images/phone1.png"
+  },
+  {
+    "title": "Samsung Galaxy S21",
+    "description": "Snapdragon 888, 120Hz display, versatile camera.",
+    "price": 799,
+    "image": "assets/images/phone2.png"
+  },
+  {
+    "title": "Google Pixel 6",
+    "description": "Tensor chip, advanced camera system, clean Android interface.",
+    "price": 599,
+    "image": "assets/images/phone3.png"
+  },
+  {
+    "title": "Xiaomi Redmi Note 13 Pro",
+    "description": "Qualcomm SM7435-AB, Adreno 710, sleek design.",
+    "price": 699,
+    "image": "assets/images/phone4.png"
+  }
+]

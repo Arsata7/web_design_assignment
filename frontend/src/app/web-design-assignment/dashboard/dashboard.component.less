@@ -1,0 +1,36 @@
+.wrapper {
+  background-color: #20202c;
+  position: relative;
+}
+
+.content-container {
+  overflow-y: auto;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  gap: 20px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.toolbar button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #727692;
+}
+
+.toolbar button.active {
+  color: white;
+}
+
+.footer-button:hover {
+  background-color: #ccc;
+}

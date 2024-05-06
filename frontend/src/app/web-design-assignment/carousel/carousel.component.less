@@ -1,0 +1,163 @@
+body {
+  background-color: #20202c;
+  min-height: 100vh;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item {
+  padding-top: 30px;
+  width: 75%;
+  right: 15%;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  width: 50%;
+  padding-bottom: 45px;
+}
+
+.w-100 {
+  height: 55%;
+  width: 55% !important;
+}
+
+.row {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.product-info {
+  color: white;
+  margin-top: 20px;
+}
+
+.price {
+  color: white;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  font-size: 30px;
+  color: #727692;
+}
+
+.newPrice {
+  font-size: 30px;
+  padding-left: 20px;
+  color: #6971fa;
+}
+
+.image-container {
+  left: 30%;
+}
+
+.material-icons {
+  color: #6971fa;
+}
+
+.notification-badge {
+  margin-right: 20%;
+  position: relative;
+  font-size: 30px;
+}
+
+.notification-badge .badge {
+  position: absolute;
+  top: -10px;
+  right: -18px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.logo-container {
+  margin-left: 4%;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.circle-button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #20202c;
+  border: 2px solid #6971fa;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-symbol {
+  line-height: 1;
+  font-size: 24px;
+}
+
+.addToCardWrapper {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.addToCardText {
+  color: white;
+  margin-bottom: 0 !important; 
+  margin-top: 0 !important;
+}
+
+.carousel-control-prev {
+  height: 50px;
+  width: 50px;
+  left: 90%;
+  top: 28%;
+}
+
+.carousel-control-next {
+  height: 50px;
+  width: 50px;
+  top: 22%;
+  left: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .col-md-4 {
+    width: 100%;
+  }
+  .w-100 {
+    height: 80%;
+    width: 80% !important;
+  }
+}
